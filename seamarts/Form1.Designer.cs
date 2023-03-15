@@ -39,7 +39,6 @@ namespace seamarts
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.produk = new System.Windows.Forms.Label();
             this.txt_produk = new System.Windows.Forms.TextBox();
             this.deskripsi = new System.Windows.Forms.Label();
@@ -58,7 +57,10 @@ namespace seamarts
             this.txt_image = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.insert = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,17 +175,6 @@ namespace seamarts
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             this.Column6.Width = 125;
-            // 
-            // pictureBox
-            // 
-            this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox.Location = new System.Drawing.Point(41, 116);
-            this.pictureBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(205, 127);
-            this.pictureBox.TabIndex = 4;
-            this.pictureBox.TabStop = false;
-            this.pictureBox.Click += new System.EventHandler(this.pictureBox_Click);
             // 
             // produk
             // 
@@ -415,12 +406,34 @@ namespace seamarts
             this.insert.TabIndex = 21;
             this.insert.Text = "Image";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::seamarts.Properties.Resources.logout__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(1195, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(39, 40);
+            this.pictureBox2.TabIndex = 24;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox.Location = new System.Drawing.Point(41, 116);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(205, 127);
+            this.pictureBox.TabIndex = 4;
+            this.pictureBox.TabStop = false;
+            this.pictureBox.Click += new System.EventHandler(this.pictureBox_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Honeydew;
             this.ClientSize = new System.Drawing.Size(1246, 590);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.insert);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.seamarts);
@@ -450,6 +463,7 @@ namespace seamarts
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -487,6 +501,7 @@ namespace seamarts
         private System.Windows.Forms.DataGridViewImageColumn Column6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label insert;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
